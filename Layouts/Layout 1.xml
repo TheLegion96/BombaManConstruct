@@ -2679,8 +2679,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>96</x>
-                        <y>224</y>
+                        <x>98</x>
+                        <y>229</y>
                         <z>0</z>
                         <width>64</width>
                         <height>128</height>
