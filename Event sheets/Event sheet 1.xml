@@ -22,15 +22,11 @@
                     <sub-events>
                         <event-block sid="7027245156905055">
                             <conditions>
-                                <condition id="0" name="On key pressed" sid="1713927013605938" type="Keyboard">
+                                <condition id="2" name="Key is down" sid="1713927013605938" type="Keyboard">
                                     <param id="0" name="Key">68 (D)</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-10" name="Set value" sid="7104648744149103" type="Player">
-                                    <param id="0" name="Instance variable">Direction</param>
-                                    <param id="1" name="Value">DIR_RIGHT</param>
-                                </action>
                                 <action id="4" name="Set animation" sid="3577243278669182" type="Player">
                                     <param id="0" name="Animation">&quot;Right&quot;</param>
                                     <param id="1" name="From">1</param>
@@ -39,15 +35,11 @@
                         </event-block>
                         <event-block sid="5275266332617388">
                             <conditions>
-                                <condition id="0" name="On key pressed" sid="7690590234968026" type="Keyboard">
+                                <condition id="2" name="Key is down" sid="7690590234968026" type="Keyboard">
                                     <param id="0" name="Key">87 (W)</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-10" name="Set value" sid="6893654969328768" type="Player">
-                                    <param id="0" name="Instance variable">Direction</param>
-                                    <param id="1" name="Value">DIR_UP</param>
-                                </action>
                                 <action id="4" name="Set animation" sid="6703547915114957" type="Player">
                                     <param id="0" name="Animation">&quot;Back&quot;</param>
                                     <param id="1" name="From">1</param>
@@ -56,15 +48,11 @@
                         </event-block>
                         <event-block sid="6133919649304987">
                             <conditions>
-                                <condition id="0" name="On key pressed" sid="8744102316592306" type="Keyboard">
+                                <condition id="2" name="Key is down" sid="8744102316592306" type="Keyboard">
                                     <param id="0" name="Key">83 (S)</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-10" name="Set value" sid="5393316351289236" type="Player">
-                                    <param id="0" name="Instance variable">Direction</param>
-                                    <param id="1" name="Value">DIR_DOWN</param>
-                                </action>
                                 <action id="4" name="Set animation" sid="2707333051379676" type="Player">
                                     <param id="0" name="Animation">&quot;Front&quot;</param>
                                     <param id="1" name="From">1</param>
@@ -73,16 +61,80 @@
                         </event-block>
                         <event-block sid="706394737088648">
                             <conditions>
-                                <condition id="0" name="On key pressed" sid="8051968639892048" type="Keyboard">
+                                <condition id="2" name="Key is down" sid="8051968639892048" type="Keyboard">
                                     <param id="0" name="Key">65 (A)</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-10" name="Set value" sid="9096848808778709" type="Player">
+                                <action id="4" name="Set animation" sid="4068393460840244" type="Player">
+                                    <param id="0" name="Animation">&quot;Left&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="521296907206552">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="847176183812611" type="Keyboard">
+                                    <param id="0" name="Key">68 (D)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="243265087192618" type="Player">
+                                    <param id="0" name="Instance variable">Direction</param>
+                                    <param id="1" name="Value">DIR_RIGHT</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="360285552714303" type="Player">
+                                    <param id="0" name="Animation">&quot;Right&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="520468174107156">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="781984219283726" type="Keyboard">
+                                    <param id="0" name="Key">87 (W)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="681045701323320" type="Player">
+                                    <param id="0" name="Instance variable">Direction</param>
+                                    <param id="1" name="Value">DIR_UP</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="186099507811122" type="Player">
+                                    <param id="0" name="Animation">&quot;Back&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="427719434689478">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="153047814489792" type="Keyboard">
+                                    <param id="0" name="Key">83 (S)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="461908479926668" type="Player">
+                                    <param id="0" name="Instance variable">Direction</param>
+                                    <param id="1" name="Value">DIR_DOWN</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="200482988619653" type="Player">
+                                    <param id="0" name="Animation">&quot;Front&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="713954893863422">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="158481593385207" type="Keyboard">
+                                    <param id="0" name="Key">65 (A)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="926254098606914" type="Player">
                                     <param id="0" name="Instance variable">Direction</param>
                                     <param id="1" name="Value">DIR_LEFT</param>
                                 </action>
-                                <action id="4" name="Set animation" sid="4068393460840244" type="Player">
+                                <action id="4" name="Set animation" sid="791137029667487" type="Player">
                                     <param id="0" name="Animation">&quot;Left&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
@@ -342,6 +394,33 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="501322660144762">
+                            <conditions>
+                                <condition id="-19" name="On destroyed" sid="660299541734294" type="Bomb" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="161536488330055" type="Bomb">
+                                    <param id="0" name="Object">Flame</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="382119721616228" type="Bomb">
+                                    <param id="0" name="Object">Flame</param>
+                                    <param id="1" name="Layer">2</param>
+                                    <param id="2" name="Image point">2</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="720584666106499" type="Bomb">
+                                    <param id="0" name="Object">Flame</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">3</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="738981270951735" type="Bomb">
+                                    <param id="0" name="Object">Flame</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">4</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="285471765003390">
@@ -354,21 +433,16 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="226934332174671" type="Bomb" />
-                        <action id="0" name="Spawn another object" sid="119088099951327" type="Bomb">
-                            <param id="0" name="Object">Expl</param>
-                            <param id="1" name="Layer">1</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
                     </actions>
                 </event-block>
-                <event-block sid="429734318992257">
+                <event-block sid="201754599684301">
                     <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="979445683636455" type="Bomb">
+                        <condition id="1" name="Is overlapping another object" sid="302491412611063" type="Bomb">
                             <param id="0" name="Object">UnBlock</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="146919874374729" type="Bomb" />
+                        <action id="-9" name="Destroy" sid="691088547623379" type="Bomb" />
                     </actions>
                 </event-block>
                 <event-block sid="897790963028583">
@@ -381,17 +455,47 @@
                         <action id="-9" name="Destroy" sid="738124758417415" type="Bomb" />
                     </actions>
                 </event-block>
-                <event-block sid="349907702049639">
+            </sub-events>
+        </event-group>
+        <event-block sid="482930093693126">
+            <conditions>
+                <condition id="-16" name="Is on layer" sid="741294888690025" type="Flame">
+                    <param id="0" name="Layer">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="552702769295351">
                     <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="440238729486065" type="Expl">
+                        <condition id="1" name="Is overlapping another object" sid="774748853625193" type="Flame">
                             <param id="0" name="Object">BrBlock</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="971312083297636" type="BrBlock" />
+                        <action id="-9" name="Destroy" sid="580756643033006" type="BrBlock" />
+                    </actions>
+                </event-block>
+                <event-block sid="697659385469162">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="459911176074292" type="Flame">
+                            <param id="0" name="Object">UnBlock</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="869279802191131" type="Flame" />
+                    </actions>
+                </event-block>
+                <event-block sid="519909277414760">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="900784986567621" type="Flame">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="972972877271076" type="Player" />
                     </actions>
                 </event-block>
             </sub-events>
-        </event-group>
+        </event-block>
     </events>
 </c2eventsheet>
