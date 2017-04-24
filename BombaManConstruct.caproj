@@ -19,6 +19,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
@@ -88,6 +89,7 @@
                 <instance-variable name="Player" sid="5628565507936428" type="number" />
                 <instance-variable name="XIniziale" sid="661124803338935" type="number" />
                 <instance-variable name="Ready" sid="461069068096775" type="boolean" />
+                <instance-variable name="YIniziale" sid="829504523995854" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="5832799641866998">
@@ -95,6 +97,9 @@
                 </behavior-type>
                 <behavior-type name="Solid" sid="108580302018953">
                     <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="949181444218710">
+                    <behavior id="bound" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -441,6 +446,12 @@
             <plugin id="Text" />
         </object-type>
         <object-type name="StartOnReady" sid="406273288505647">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Ready1" sid="980258469531144">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text" sid="347047672554385">
             <plugin id="Text" />
         </object-type>
     </object-folder>
