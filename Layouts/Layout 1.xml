@@ -2151,7 +2151,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text" uid="75">
+                <instance type="Ready2" uid="75">
                     <properties>
                         <text>Premi U per partire</text>
                         <initial-visibility>Visible</initial-visibility>

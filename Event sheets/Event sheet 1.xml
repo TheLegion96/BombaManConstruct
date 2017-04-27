@@ -234,7 +234,7 @@
                             <param id="0" name="Variable">Ready</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="592860105735199" type="Text">
+                        <action id="-15" name="Set visible" sid="592860105735199" type="Ready2">
                             <param id="0" name="Visibility">0</param>
                         </action>
                         <action id="-10" name="Set value" sid="759285900030838" type="Player">
@@ -260,7 +260,7 @@
                         </condition>
                         <condition id="-14" name="Compare variable" sid="965196019126598" type="System">
                             <param id="0" name="Variable">Ready</param>
-                            <param id="1" name="Comparison">0</param>
+                            <param id="1" name="Comparison">5</param>
                             <param id="2" name="Value">2</param>
                         </condition>
                     </conditions>
@@ -510,6 +510,11 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Spawn another object" sid="295769196468282" type="Player">
+                            <param id="0" name="Object">Expl</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
                         <action id="-9" name="Destroy" sid="972972877271076" type="Player" />
                     </actions>
                 </event-block>
@@ -527,6 +532,28 @@
                     <param id="0" name="Variable">Ready</param>
                     <param id="1" name="Value">1</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="726330245193122">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="174659232134330" type="Keyboard">
+                    <param id="0" name="Key">32 (Barra Spaziatrice)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="835220538354318" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="358661845395278">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="778662715714113" type="System">
+                    <param id="0" name="Variable">Ready</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="627512299959012" type="LeggendaGiocatori" />
             </actions>
         </event-block>
     </events>

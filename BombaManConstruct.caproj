@@ -411,14 +411,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="376505716609091">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="335524741541354" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Flame" sid="590902532076728">
             <plugin id="Sprite" />
             <behaviors>
@@ -451,7 +443,7 @@
         <object-type name="Ready1" sid="980258469531144">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Text" sid="347047672554385">
+        <object-type name="Ready2" sid="347047672554385">
             <plugin id="Text" />
         </object-type>
     </object-folder>
